@@ -1,118 +1,270 @@
-# resumeCV
+# Interaktywny Generator CV
 
-Dokumentacja Wymagań Projektowych (Product Backlog)
-Nazwa projektu: Interaktywny Generator CV
-Metodyka: Scrum / Agile
-Cel projektu: Stworzenie aplikacji webowej umożliwiającej łatwe i intuicyjne generowanie profesjonalnych życiorysów z opcją eksportu do pliku PDF oraz automatycznego tłumaczenia.
+Aplikacja webowa umożliwiająca tworzenie nowoczesnego, interaktywnego CV z podglądem na żywo, wyborem szablonu, automatycznym tłumaczeniem oraz eksportem do pliku PDF.
 
-1. Role w projekcie (Scrum Team)
-W projekcie szkolnym warto zaznaczyć, kto pełni jaką rolę (możesz przypisać tu nazwiska członków grupy).
+---
 
-Product Owner (Właściciel Produktu): [Imię i Nazwisko] – dba o wizję produktu, zarządza wymaganiami (Backlogiem) i ustala priorytety zadań.
+## Spis treści
 
-Scrum Master: [Imię i Nazwisko] – pilnuje poprawności procesu Scrum, pomaga zespołowi usuwać przeszkody i facylituje spotkania.
+- [Opis projektu](#opis-projektu)
+- [Cel projektu](#cel-projektu)
+- [Zakres funkcjonalny](#zakres-funkcjonalny)
+- [Role w projekcie](#role-w-projekcie)
+- [Wymagania funkcjonalne](#wymagania-funkcjonalne)
+- [Wymagania niefunkcjonalne](#wymagania-niefunkcjonalne)
+- [Backlog produktu](#backlog-produktu)
+- [Kryteria akceptacji produktu](#kryteria-akceptacji-produktu)
+- [Propozycja technologii](#propozycja-technologii)
+- [Status projektu](#status-projektu)
 
-Development Team (Zespół Deweloperski): [Imiona i Nazwiska] – programiści i projektanci odpowiedzialni za techniczne dostarczenie działającej aplikacji webowej.
+---
 
-2. Epiki i Historyjki Użytkownika (User Stories)
-Wymagania zostały podzielone na większe moduły (Epiki), a następnie na mniejsze, realizowalne zadania z perspektywy użytkownika końcowego.
+## Opis projektu
 
-Epic 1: Zarządzanie danymi personalnymi i edukacją
-Ten moduł odpowiada za formularze i interfejs do wprowadzania danych przez kandydata.
+Interaktywny Generator CV to aplikacja webowa stworzona w celu ułatwienia użytkownikowi przygotowania profesjonalnego życiorysu. System pozwala wprowadzać dane osobowe, wykształcenie, doświadczenie, umiejętności oraz znajomość języków, a następnie generować gotowy dokument CV w wybranym szablonie.
 
-US 1.1: Podstawowe dane i zdjęcie
+Projekt został przygotowany jako dokumentacja szkolna z uwzględnieniem podejścia Agile/Scrum, dzięki czemu cały proces tworzenia aplikacji jest uporządkowany i czytelny.
 
-Jako kandydat szukający pracy, chcę wprowadzić moje dane kontaktowe (imię, nazwisko, email, telefon) oraz wgrać zdjęcie profilowe, aby rekruter mógł się ze mną skontaktować i rozpoznać mnie na rozmowie.
+---
 
-Kryteria akceptacji:
+## Cel projektu
 
-Formularz zawiera pola tekstowe dla imienia, nazwiska, emaila i telefonu.
+Celem projektu jest stworzenie aplikacji, która:
 
-System waliduje poprawność adresu email (np. obecność znaku "@") oraz format numeru telefonu.
+- umożliwia szybkie i wygodne tworzenie CV,
+- porządkuje dane użytkownika w przejrzysty sposób,
+- oferuje wybór kilku gotowych szablonów,
+- pozwala eksportować CV do PDF,
+- wspiera automatyczne tłumaczenie CV na język obcy,
+- wykorzystuje intuicyjny formularz z listami rozwijalnymi.
 
-Użytkownik może wgrać plik graficzny (JPG/PNG), a aplikacja automatycznie go kadruje do formatu zdjęcia w CV.
+---
 
-US 1.2: Wykształcenie i listy rozwijalne
+## Zakres funkcjonalny
 
-Jako użytkownik, chcę dodawać kolejne etapy wykształcenia za pomocą interaktywnych list rozwijalnych (podział na szkoły wyższe, średnie itp.), aby proces wypełniania CV był szybki i zminimalizował ryzyko literówek.
+Aplikacja umożliwia użytkownikowi:
 
-Kryteria akceptacji:
+- wpisanie imienia i nazwiska,
+- dodanie danych kontaktowych,
+- wpisanie adresu e-mail,
+- podanie numeru telefonu,
+- dodanie zdjęcia profilowego,
+- uzupełnienie wykształcenia,
+- uzupełnienie doświadczenia zawodowego,
+- wpisanie umiejętności twardych,
+- wpisanie umiejętności miękkich,
+- określenie znajomości języków obcych,
+- wybór jednego z minimum 3 szablonów CV,
+- automatyczne tłumaczenie CV na język obcy,
+- wygenerowanie gotowego dokumentu PDF.
 
-Istnieje przycisk "Dodaj wykształcenie".
+---
 
-Typ szkoły wybierany jest z predefiniowanej listy (np. Wyższe, Średnie, Podstawowe, Inne).
+## Role w projekcie
 
-Użytkownik może wpisać nazwę placówki, kierunek i lata nauki.
+### Product Owner
+Osoba odpowiedzialna za wizję produktu, ustalanie priorytetów oraz zarządzanie backlogiem.
 
-US 1.3: Doświadczenie i umiejętności
+**Osoba:** ....................................
 
-Jako kandydat, chcę mieć osobne sekcje na dodanie doświadczenia zawodowego oraz umiejętności twardych i miękkich, aby czytelnie zaprezentować moje kompetencje.
+### Scrum Master
+Osoba odpowiedzialna za wspieranie zespołu, pilnowanie procesu Scrum oraz organizację pracy.
 
-Kryteria akceptacji:
+**Osoba:** ....................................
 
-Sekcja doświadczenia pozwala na dodanie stanowiska, nazwy firmy, okresu zatrudnienia oraz opisu obowiązków.
+### Zespół developerski
+Osoby odpowiedzialne za projektowanie, implementację, testowanie i dokumentację aplikacji.
 
-Sekcja umiejętności jest podzielona na dwie kategorie: "Miękkie" i "Twarde".
+**Osoby:** ....................................
 
-Umiejętności można dodawać dynamicznie w formie małych "tagów" w interfejsie.
+---
 
-US 1.4: Znajomość języków obcych
+## Wymagania funkcjonalne
 
-Jako użytkownik, chcę wybierać języki obce i poziom ich znajomości z ograniczonej listy rozwijalnej, aby moje CV było ustandaryzowane.
+### 1. Dane osobowe i kontaktowe
+Użytkownik powinien mieć możliwość wprowadzenia podstawowych danych osobowych.
 
-Kryteria akceptacji:
+**System powinien umożliwiać:**
+- wpisanie imienia,
+- wpisanie nazwiska,
+- wpisanie adresu e-mail,
+- wpisanie numeru telefonu,
+- dodanie zdjęcia profilowego.
 
-Formularz posiada pole "Wybierz język" z listą najpopularniejszych języków.
+### 2. Sekcja wykształcenia
+Użytkownik powinien mieć możliwość dodawania informacji o wykształceniu.
 
-Formularz posiada pole "Poziom" ze standardową skalą (A1, A2, B1, B2, C1, C2, Ojczysty).
+**Wymagania:**
+- użytkownik może dodać wiele pozycji wykształcenia,
+- typ szkoły wybierany jest z listy rozwijalnej,
+- lista może zawierać przykładowo:
+  - podstawowe,
+  - średnie,
+  - wyższe,
+  - inne,
+- po wyborze typu szkoły użytkownik może uzupełnić nazwę szkoły, kierunek i lata nauki.
 
-Epic 2: Personalizacja i Generowanie Dokumentu
-Ten moduł odpowiada za wygląd końcowy CV oraz jego eksport.
+### 3. Sekcja doświadczenia
+Użytkownik powinien mieć możliwość dodawania doświadczenia zawodowego.
 
-US 2.1: Wybór szablonu graficznego
+**Wymagania:**
+- możliwość dodania stanowiska,
+- możliwość dodania nazwy firmy,
+- możliwość dodania okresu zatrudnienia,
+- możliwość wpisania opisu obowiązków.
 
-Jako użytkownik, chcę mieć możliwość wyboru jednego z co najmniej trzech gotowych szablonów CV, aby dopasować wygląd dokumentu do charakteru branży, do której aplikuję.
+### 4. Umiejętności
+Aplikacja powinna rozdzielać umiejętności na dwie osobne grupy.
 
-Kryteria akceptacji:
+**Kategorie:**
+- umiejętności twarde,
+- umiejętności miękkie.
 
-Aplikacja oferuje 3 różne widoki (np. Klasyczny, Nowoczesny, Kreatywny).
+### 5. Języki obce
+Użytkownik powinien wybierać język i poziom znajomości z list rozwijalnych.
 
-Zmiana szablonu w aplikacji natychmiast aktualizuje podgląd CV na żywo.
+**Przykład:**
+- język: angielski, niemiecki, francuski, hiszpański, włoski,
+- poziom: A1, A2, B1, B2, C1, C2, ojczysty.
 
-Przełączenie szablonu nie powoduje utraty wcześniej wprowadzonych danych.
+### 6. Szablony CV
+Aplikacja powinna oferować co najmniej 3 różne szablony wizualne.
 
-US 2.2: Eksport do PDF
+**Przykładowe szablony:**
+- Klasyczny,
+- Nowoczesny,
+- Kreatywny.
 
-Jako kandydat, chcę wygenerować i pobrać moje gotowe CV w formacie PDF, aby móc je bezpiecznie wysłać pracodawcy bez obaw o "rozsypanie się" formatowania.
+### 7. Tłumaczenie CV
+Aplikacja powinna umożliwiać automatyczne tłumaczenie treści CV na wybrany język obcy.
 
-Kryteria akceptacji:
+**Wymagania:**
+- tłumaczenie nagłówków sekcji,
+- tłumaczenie treści wpisanych przez użytkownika,
+- możliwość ręcznej korekty po tłumaczeniu.
 
-W interfejsie znajduje się wyraźny przycisk "Pobierz PDF".
+### 8. Eksport do PDF
+Aplikacja powinna umożliwiać wygenerowanie i pobranie CV w formacie PDF.
 
-Wygenerowany plik zachowuje dokładny wygląd wybrany w podglądzie (wysoka jakość, prawidłowe czcionki i marginesy).
+**Wymagania:**
+- przycisk generowania PDF,
+- zachowanie wybranego szablonu,
+- poprawne formatowanie dokumentu po eksporcie.
 
-Epic 3: Automatyzacja i funkcje zaawansowane
-Ten moduł zawiera dodatkowe udogodnienia dla użytkownika.
+---
 
-US 3.1: Automatyczne tłumaczenie CV
+## Wymagania niefunkcjonalne
 
-Jako kandydat aplikujący za granicę, chcę kliknięciem przetłumaczyć całe moje CV na język obcy, aby zaoszczędzić czas na ręcznym przepisywaniu życiorysu.
+### Użyteczność
+- interfejs powinien być prosty i intuicyjny,
+- formularz powinien być czytelny,
+- użytkownik powinien widzieć podgląd CV podczas edycji.
 
-Kryteria akceptacji:
+### Responsywność
+- aplikacja powinna działać na komputerach,
+- aplikacja powinna działać na tabletach,
+- aplikacja powinna działać na smartfonach.
 
-System posiada przycisk wywołujący tłumaczenie (np. na język angielski).
+### Wydajność
+- aplikacja powinna działać płynnie,
+- generowanie PDF nie powinno trwać zbyt długo,
+- przełączanie szablonów powinno odbywać się bez przeładowania strony.
 
-Tłumaczeniu ulegają stałe elementy szablonu (np. nagłówki sekcji: "Education" zamiast "Wykształcenie") oraz treści wprowadzone przez użytkownika.
+### Bezpieczeństwo
+- dane użytkownika powinny być przetwarzane w bezpieczny sposób,
+- formularze powinny być zabezpieczone przed błędnymi danymi,
+- system powinien walidować e-mail oraz numer telefonu.
 
-Użytkownik ma możliwość ręcznej korekty przetłumaczonego tekstu przed pobraniem pliku.
+---
 
-3. Wymagania Niefunkcjonalne
-Te punkty definiują ogólną jakość i ramy technologiczne projektu, co jest bardzo cenione przez wykładowców w dokumentacji.
+## Backlog produktu
 
-Dostępność: Aplikacja musi działać w przeglądarce internetowej (Web App) bez konieczności instalacji na komputerze.
+| ID | Epic | User Story | Priorytet |
+|---|---|---|---|
+| US-01 | Dane osobowe | Jako użytkownik chcę dodać imię, nazwisko, e-mail i telefon, aby uzupełnić podstawowe dane w CV. | Wysoki |
+| US-02 | Zdjęcie | Jako użytkownik chcę dodać zdjęcie profilowe, aby CV wyglądało bardziej profesjonalnie. | Średni |
+| US-03 | Wykształcenie | Jako użytkownik chcę dodawać wykształcenie z użyciem list rozwijalnych, aby szybciej wypełnić formularz. | Wysoki |
+| US-04 | Doświadczenie | Jako użytkownik chcę dodawać doświadczenie zawodowe, aby pokazać przebieg kariery. | Wysoki |
+| US-05 | Umiejętności | Jako użytkownik chcę dodać umiejętności twarde i miękkie, aby lepiej zaprezentować swoje kompetencje. | Wysoki |
+| US-06 | Języki | Jako użytkownik chcę wybierać języki obce oraz poziom znajomości z listy, aby dane były uporządkowane. | Średni |
+| US-07 | Szablony | Jako użytkownik chcę wybrać jeden z 3 szablonów CV, aby dopasować wygląd dokumentu. | Wysoki |
+| US-08 | Tłumaczenie | Jako użytkownik chcę przetłumaczyć CV na język obcy, aby aplikować do zagranicznych pracodawców. | Średni |
+| US-09 | PDF | Jako użytkownik chcę pobrać CV jako PDF, aby wysłać gotowy dokument rekruterowi. | Wysoki |
 
-Responsywność (RWD): Interfejs wprowadzania danych musi działać poprawnie na urządzeniach mobilnych, jak i na komputerach stacjonarnych.
+---
 
-Bezpieczeństwo: Dane wprowadzane przez użytkownika nie mogą być bez jego wiedzy trwale przechowywane na serwerze po zakończeniu sesji (lub powinny być w pełni anonimizowane/szyfrowane).
+## Kryteria akceptacji produktu
 
-Wydajność: Generowanie pliku PDF nie powinno trwać dłużej niż 5 sekund od momentu kliknięcia przycisku.
+### Formularz danych
+- użytkownik może uzupełnić wszystkie podstawowe pola,
+- system sprawdza poprawność e-maila,
+- system sprawdza poprawność numeru telefonu.
+
+### Wykształcenie
+- użytkownik może wybrać typ szkoły z listy,
+- użytkownik może dodać więcej niż jedną szkołę,
+- dane wyświetlają się poprawnie w podglądzie CV.
+
+### Języki obce
+- użytkownik wybiera język z gotowej listy,
+- użytkownik wybiera poziom znajomości z gotowej listy,
+- dane zapisują się poprawnie w formularzu.
+
+### Szablony
+- system zawiera minimum 3 szablony,
+- zmiana szablonu aktualizuje podgląd,
+- dane użytkownika nie znikają po zmianie szablonu.
+
+### Tłumaczenie
+- system tłumaczy nagłówki sekcji,
+- system tłumaczy treść wpisaną przez użytkownika,
+- użytkownik może poprawić tłumaczenie ręcznie.
+
+### PDF
+- plik PDF generuje się poprawnie,
+- dokument zachowuje układ wybranego szablonu,
+- pobrany plik nadaje się do wysłania pracodawcy.
+
+---
+
+## Propozycja technologii
+
+### Frontend
+- HTML
+- CSS
+- JavaScript
+- React lub Vue
+
+### Backend
+- Node.js / Express  
+lub
+- Python / Flask
+
+### Dodatkowe narzędzia
+- biblioteka do generowania PDF,
+- API do tłumaczeń,
+- system kontroli wersji Git,
+- GitHub do przechowywania repozytorium.
+
+---
+
+## Status projektu
+
+**Etap:** Analiza wymagań i przygotowanie dokumentacji projektowej
+
+### Planowane etapy prac
+1. Analiza wymagań.
+2. Przygotowanie makiety interfejsu.
+3. Implementacja formularza.
+4. Dodanie szablonów CV.
+5. Implementacja tłumaczenia.
+6. Implementacja eksportu PDF.
+7. Testy.
+8. Poprawki i finalizacja projektu.
+
+---
+
+## Autorzy
+
+- Kamil Jarmuż
+- Gabriel Jarosz
