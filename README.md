@@ -9,7 +9,6 @@ Aplikacja webowa umożliwiająca tworzenie nowoczesnego, interaktywnego CV z pod
 - [Opis projektu](#opis-projektu)
 - [Cel projektu](#cel-projektu)
 - [Zakres funkcjonalny](#zakres-funkcjonalny)
-- [Role w projekcie](#role-w-projekcie)
 - [Wymagania funkcjonalne](#wymagania-funkcjonalne)
 - [Wymagania niefunkcjonalne](#wymagania-niefunkcjonalne)
 - [Backlog produktu](#backlog-produktu)
@@ -57,25 +56,6 @@ Aplikacja umożliwia użytkownikowi:
 - wybór jednego z minimum 3 szablonów CV,
 - automatyczne tłumaczenie CV na język obcy,
 - wygenerowanie gotowego dokumentu PDF.
-
----
-
-## Role w projekcie
-
-### Product Owner
-Osoba odpowiedzialna za wizję produktu, ustalanie priorytetów oraz zarządzanie backlogiem.
-
-**Osoba:** ....................................
-
-### Scrum Master
-Osoba odpowiedzialna za wspieranie zespołu, pilnowanie procesu Scrum oraz organizację pracy.
-
-**Osoba:** ....................................
-
-### Zespół developerski
-Osoby odpowiedzialne za projektowanie, implementację, testowanie i dokumentację aplikacji.
-
-**Osoby:** ....................................
 
 ---
 
