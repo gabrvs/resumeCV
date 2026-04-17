@@ -1,6 +1,5 @@
 # Interaktywny Generator CV
-
-Aplikacja webowa umożliwiająca tworzenie nowoczesnego, interaktywnego CV z podglądem na żywo, wyborem szablonu, automatycznym tłumaczeniem oraz eksportem do pliku PDF.
+Aplikacja webowa w next.js umożliwiająca tworzenie nowoczesnego, interaktywnego CV z podglądem na żywo, wyborem szablonu, automatycznym tłumaczeniem oraz eksportem do pliku PDF.
 
 ---
 
